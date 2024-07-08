@@ -9,6 +9,7 @@ export function useKanbanQuery() {
     queryKey: ["deals"],
     queryFn: () => DB.listDocuments(DB_ID, COLLECTION_DEALS),
     select(data) {
+      console.log(data);
       const newBoard: IColumn[] = KANBAN_DATA.map((column) => ({
         ...column,
         items: [],

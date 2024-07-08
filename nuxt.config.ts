@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/image",
     "shadcn-nuxt",
+    "@nuxt/ui",
+    "nuxt-icon",
+    "@pinia/nuxt",
     [
       "@nuxtjs/google-fonts",
       {
@@ -15,15 +18,12 @@ export default defineNuxtConfig({
         },
       },
     ],
-    "nuxt-icon",
-    "@pinia/nuxt",
     [
       "@vee-validate/nuxt",
       {
         autoImports: true,
       },
     ],
-    "@nuxt/ui",
   ],
   shadcn: {
     prefix: "Ui",
